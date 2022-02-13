@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-import useGetAvocadosById from '../../hooks/useGetAvocadosById';
+import useGetAvocadosById from '@hooks/useGetAvocadosById';
 
 const ProductItem = () => {
   const {

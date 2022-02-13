@@ -1,4 +1,4 @@
-import Database from '../../../database/db';
+import Database from '@database/db';
 
 const getAvoById = async (req, res) => {
   const data = await Database.getById(req.query.id);

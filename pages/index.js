@@ -1,4 +1,4 @@
-import useGetAvocados from '../hooks/useGetAvocados';
+import useGetAvocados from '@hooks/useGetAvocados';
 
 const Home = () => {
   const { products } = useGetAvocados();
