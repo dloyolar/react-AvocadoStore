@@ -5,10 +5,10 @@ const Navbar = () => {
     <div>
       <nav>
         <menu>
-          <Link href="/" prefetch={false}>
+          <Link href="/">
             <a>Home</a>
           </Link>
-          <Link href="/about" prefetch={false}>
+          <Link href="/about">
             <a>About</a>
           </Link>
         </menu>
