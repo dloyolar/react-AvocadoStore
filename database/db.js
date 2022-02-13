@@ -19,7 +19,9 @@ Database.getById = async (id) => {
 
 const randomDelay = () => {
   return new Promise((resolve) => {
-    const delay = Math.floor(Math.random() * 4000) + 1000;
+    const max = 350;
+    const min = 100;
+    const delay = Math.floor(Math.random() * (max - min + 1)) + min;
     setTimeout(resolve, delay);
   });
 };
