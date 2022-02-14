@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import useGetAvocadosById from '@hooks/useGetAvocadosById';
+import ProductSummary from '@components/ProductSummary/ProductSummary';
 
 const ProductItem = () => {
   const {
@@ -9,7 +10,7 @@ const ProductItem = () => {
 
   const { product } = useGetAvocadosById(productId);
 
-  return <h1>ProductItem {product?.name}</h1>;
+  return product === null ? null : <ProductSummary product={product} />;
 };
 
 export default ProductItem;

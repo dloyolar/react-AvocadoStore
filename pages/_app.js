@@ -1,3 +1,4 @@
+import Layout from '@components/Layout/Layout';
 import 'semantic-ui-css/semantic.min.css';
 import CartProvider from 'store/Cart';
 
@@ -6,7 +7,9 @@ function MyApp({ Component, pageProps }) {
   // Layout
   return (
     <CartProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </CartProvider>
   );
 }
