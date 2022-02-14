@@ -15,18 +15,15 @@ const Navbar = () => {
     <Menu size="huge" borderless pointing as="header">
       <Container text>
         <Link href="/" passHref>
-          <Menu.Item
-            active={pathname === '/'}
-            title="Inicio | Todos los productos"
-          >
+          <Menu.Item active={pathname === '/'}>
             <Avocado />
-            Avo Store
+            Avocado Store
           </Menu.Item>
         </Link>
         <Menu.Menu position="right">
           <Link href="/cart" passHref>
             <Menu.Item active={pathname === '/cart'}>
-              <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
+              <ShoppingCartIcon cartCount={cartCount} name="Cart" />
             </Menu.Item>
           </Link>
         </Menu.Menu>
