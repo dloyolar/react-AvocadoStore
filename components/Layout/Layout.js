@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'semantic-ui-react';
 
 import Navbar from '@components/Navbar/Navbar';
+import Footer from '@components/Footer/Footer';
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
       <Container as="main" text>
         {children}
       </Container>
-      <footer>footer</footer>
+      <Footer />
     </div>
   );
 };
