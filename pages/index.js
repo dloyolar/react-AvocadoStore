@@ -1,3 +1,4 @@
+import KawaiiHeader from '@components/KawaiiHeader/KawaiiHeader';
 import useGetAvocados from '@hooks/useGetAvocados';
 
 const Home = () => {
@@ -5,10 +6,7 @@ const Home = () => {
 
   return (
     <div>
-      <p>Home</p>
-      {products.map((product) => (
-        <div key={product.id}>{product.name}</div>
-      ))}
+      <KawaiiHeader />
     </div>
   );
 };
